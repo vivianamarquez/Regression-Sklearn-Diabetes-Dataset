@@ -20,6 +20,7 @@ Among these, the Lasso Regression model demonstrated the best performance with a
 
 To see the interactive plot of actual vs. predicted values, please click the link below:
 [Actual vs. Predicted Values](https://vivianamarquez.com/Regression-Sklearn-Diabetes-Dataset/images/actual_vs_predicted.html)
+<iframe src="https://vivianamarquez.com/Regression-Sklearn-Diabetes-Dataset/images/actual_vs_predicted.html" width="100%" height="600px"></iframe>
 
 These metrics indicate that the Lasso Regression model provides a moderate level of accuracy in predicting diabetes progression, making it the most suitable model for this dataset. The model's ability to perform feature selection through L1 regularization helped in identifying the most significant predictors, thus enhancing interpretability and relevance.
 
