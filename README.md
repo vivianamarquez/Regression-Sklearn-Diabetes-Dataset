@@ -8,7 +8,7 @@ Diabetes is a chronic condition that affects millions of people worldwide. Manag
 
 ## Data
 
-The diabetes dataset from `sklearn` contains ten baseline variables, all of which are numeric. The column **`target`** contains the target variable, which represents the measure of disease progression after one year. More info on this dataset: https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html#sklearn.datasets.load_diabetes
+The diabetes dataset from `sklearn` contains ten baseline variables, all of which are numeric. The column **`target`** contains the target variable, which represents the measure of disease progression after one year. More info on this dataset: [https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html#sklearn.datasets.load_diabetes](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html#sklearn.datasets.load_diabetes)
 
 ![Distribution of Target Variable](images/DistributionTargetVariable.png)
 
