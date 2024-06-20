@@ -1,6 +1,7 @@
 # Data-Driven Insights into Diabetes Progression
 
 **Jupyter Notebook with code, experimentation, further insights, and deployment strategies: [here](https://github.com/vivianamarquez/Regression-Sklearn-Diabetes-Dataset/blob/main/Regression_Example.ipynb).**
+
 **Website for this repo: [here](https://vivianamarquez.com/Regression-Sklearn-Diabetes-Dataset/).**
 
 ## Business Goal
