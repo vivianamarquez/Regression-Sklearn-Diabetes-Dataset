@@ -4,11 +4,43 @@
 
 Diabetes is a chronic condition that affects millions of people worldwide. Managing and predicting diabetes progression can significantly improve patient outcomes and healthcare efficiency. The goal of this analysis is to develop predictive models that can forecast disease progression based on various medical and demographic features. This can help in identifying high-risk patients early and tailoring personalized treatment plans.
 
+## Data
+
+The diabetes dataset from `sklearn` contains ten baseline variables, all of which are numeric. Here's a brief description of each feature:
+
+1. **age:** Age of the patient (normalized to have mean 0 and variance 1).
+
+2. **sex:** Sex of the patient.
+
+3. **bmi:** Body Mass Index (BMI), a measure of body fat based on height and weight (normalized to have mean 0 and variance 1).
+
+4. **bp:** Average blood pressure (normalized to have mean 0 and variance 1).
+
+5. **s1:** T-Cells (a type of white blood cell), measured using thymidine kinase (normalized to have mean 0 and variance 1).
+
+6. **s2:** Low-Density Lipoproteins (LDL) cholesterol (normalized to have mean 0 and variance 1).
+
+7. **s3:** High-Density Lipoproteins (HDL) cholesterol (normalized to have mean 0 and variance 1).
+
+8. **s4:** Total cholesterol/HDL ratio (normalized to have mean 0 and variance 1).
+
+9. **s5:** Logarithm of serum triglycerides level (normalized to have mean 0 and variance 1).
+
+10. **s6:** Blood sugar level (normalized to have mean 0 and variance 1).
+
+The column **`target`** contains the target variable, which represents the measure of disease progression after one year.
+
+More info on this dataset: https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html#sklearn.datasets.load_diabetes
+
+![Distribution of Target Variable](images/DistributionTargetVariable.png)
+
 ## Modeling and performance
 
 In this project, we employed various regression modeling techniques to predict diabetes progression using the diabetes dataset from `sklearn`. The models evaluated include `Linear Regression`, `Ridge Regression`, `Lasso Regression`, and `Elastic Net Regression`. Each model was trained and evaluated using a train/test split, followed by cross-validation and hyperparameter tuning using GridSearchCV to optimize performance. 
 
 Among these, the Lasso Regression model demonstrated the best performance with a `Root Mean Squared Error (RMSE) of 52.8980` and an` R-squared (R²) value of 0.4719`. That means that the model's prefictions are off by about 52..90 units from the actual values of diabetes progression andapproximately 47.19% of the variance in the disease progression is explained by the features in the model. 
+
+<iframe src="images/actual_vs_predicted.html" width="100%" height="600px"></iframe>
 
 These metrics indicate that the Lasso Regression model provides a moderate level of accuracy in predicting diabetes progression, making it the most suitable model for this dataset. The model's ability to perform feature selection through L1 regularization helped in identifying the most significant predictors, thus enhancing interpretability and relevance.
 
